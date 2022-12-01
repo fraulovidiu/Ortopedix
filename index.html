@@ -418,7 +418,7 @@ section:nth-child(even){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap:2rem;
-    padding-left: 25vh;
+    margin-left: 25vh;
 }
 
 .footer .box-container .box h3{
@@ -462,6 +462,80 @@ section:nth-child(even){
     color: white;
     padding: 5px;
     border-radius: 5px;
+}
+/* responsive */
+
+/* media queries  */
+@media (max-width:991px){
+
+html{
+    font-size: 55%;
+}
+
+.header{
+    padding: 2rem;
+}
+
+section{
+    padding:2rem;
+}
+
+}
+
+@media (max-width:768px){
+
+#menu-btn{
+    display: initial;
+}
+
+.header .navbar{
+    position: absolute;
+    top:115%; right: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    border: var(--border);
+    background: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+}
+
+.header .navbar.active{
+    transform: scale(1);
+    opacity: 1;
+    transition: .2s ease-out;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    display: block;
+    margin:2.5rem;
+}
+
+.about .content h3 {
+    align-items: center;
+    text-align: center;
+}
+
+.about .content a.btn {
+    text-align: center;
+    align-items: center;
+}
+
+.footer .box-container {
+    font-size: 55%;
+    margin: auto 0 auto 1rem;
+}
+}
+
+@media (max-width:450px){
+
+html{
+    font-size: 50%;
+}
+
 }
 
     </style>
