@@ -54,6 +54,25 @@ section:nth-child(even){
     color: var(--green);
 }
 
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    font-size: 20px;
+    margin-top: 150px;
+  }
+/* 
+  .faq-question {
+    font-weight: bold;
+    color: var(--green);
+  } */
+
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
 .heading{
     text-align: center;
     padding-bottom: 2rem;
@@ -127,6 +146,7 @@ section:nth-child(even){
     font-size: 1.7rem;
     color: #1f1f1f;
     margin-left: 2rem;
+    
 }
 
 .header .navbar a:hover{
@@ -468,6 +488,36 @@ section:nth-child(even){
     padding: 5px;
     border-radius: 5px;
 }
+
+.faq-section {
+    font-size: 20px;
+    margin-top: 90px;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 20px;
+  color: black;
+  
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    
+}
+
+.faq-question, .faq-question-button{
+    width: auto;
+    padding-top: 15px;
+    font-size: 30px;
+    background: none;
+    color: var(--green);
+}
+
+.faq-question-button:hover + .faq-answer,
+.faq-question-button:focus + .faq-answer {
+  display: block;
+}
 /* responsive */
 
 /* media queries  */
@@ -541,6 +591,15 @@ html{
     font-size: 50%;
 }
 
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 20px;
+    font-size: 20px;
+    margin-top: 150px;
+}
+
 }
 
     </style>
@@ -553,7 +612,7 @@ html{
     <a href="#" class="logo"> <ig src="./image/Opera_Snapshot_2022-11-22_181354_www.canva.com-removebg-preview.png" style="height:80px; width:80px" alt=""><span class="headerspan">Orto</span>pedix.</a>
 
     <nav class="navbar">
-        <a aria-label="Scrie-ne un mesaj" href="https://wa.me/0040728237356"> <img alt="Chat on WhatsApp" src="./image/icons8-whatsapp.svg" />
+        <a href="https://wa.me/0040728237356"> <img alt="Chat" src="./image/icons8-whatsapp-48.png" />
         <a href="./progr.html">Programare online</a>
         <a href="#services">Specializări</a>
         <a href="#blogs">Blog</a>
@@ -867,8 +926,63 @@ html{
 <!-- FAQ STARTS -->
 
 <section class="faq" id="faq">
-
     <h1 class="heading">Întrebări <span>frecvente</span></h1>
+    <div class="faq-section">
+        <div class="faq-question">
+          <button class="faq-question-button">Când este momentul potrivit pentru a face o intervenție chirurgicală? <span class="fas fa-chevron-down"></span></button>
+          <div class="faq-answer">Nu există un moment potrivit pentru o operație, dar va trebui să țineți cont de o mulțime de factori, inclusiv nivelul de durere, nivelul de stabilitate al stării dumneavoastră și modul în care acest lucru v-a afectat calitatea vieții.</div>
+        </div>
+        <div class="faq-question">
+          <button class="faq-question-button">Cât dureaza recuperarea după operație? <span class="fas fa-chevron-down"></span></button>
+          <div class="faq-answer">Sunt mai multe variabile ce afectează timpul necesar unui pacient pentru a se recupera și a vedea beneficiile chirurgiei ortopedice. Pentru unii pacienți, recuperarea durează câteva săptămâni. Pentru alții, poate dura câteva luni. În funcție de starea dumneavoastră generală de sănătate, de afecțiunea pentru care ați fost tratat și de tipul de intervenție chirurgicală efectuată, este posibil să puteți merge acasă în aceeași zi sau a doua zi după operație, chiar dacă ați avut o intervenție chirurgicală de înlocuire totală a articulației.</div>
+        </div>
+        <div class="faq-question">
+          <button class="faq-question-button">Voi putea face aceleași lucruri ca și înainte de operație? <span class="fas fa-chevron-down"></span></button>
+          <div class="faq-answer">Procedurile chirurgicale au ca scop restabilirea funcției și mișcarea fără durere, dar există adesea limitări după intervenția chirurgicală ortopedică. Discutați cu chirurgul dumneavoastră despre așteptările realiste pentru vindecare și recuperare./div>
+        </div>
+        <div class="faq-question">
+          <button class="faq-question-button">Ce fel de durere voi avea după operație? <span class="fas fa-chevron-down"></span></button>
+          <div class="faq-answer">În timp ce toată lumea se confruntă cu durerea în mod diferit, un anumit disconfort este frecvent după operație. Este normal să aveți o oarecare durere sau disconfort la locul intervenției chirurgicale, precum și o posibilă sensibilitate a oaselor/articulațiilor după operație. Chirurgul dumneavoastră ortoped va lucra îndeaproape cu echipa dumneavoastră clinică și cu alți îngrijitori pentru a determina cea mai bună strategie de gestionare a durerii pentru dumneavoastră.</div>
+        </div>
+        <div class="faq-question">
+          <button class="faq-question-button">Cat de mult rezista articulatia artificială? <span class="fas fa-chevron-down"></span></button>
+          <div class="faq-answer">Progresele în tehnologia medicală, inclusiv utilizarea materialelor durabile în articulațiile artificiale, prelungesc speranța de viață a dispozitivelor protetice. Proteza poate dura până la 15-20 de ani dacă mențineți un stil de viață sănătos, evitați creșterea în greutate și nu aveți artrită.</div>
+        </div>
+        <div class="faq-question">
+          <button class="faq-question-button">Ce reprezinta operația artroscopică? <span class="fas fa-chevron-down"></span></button>
+          <div class="faq-answer">Chirurgia artroscopică este un tip de intervenție chirurgicală minim invazivă care necesită doar mici incizii datorită unui dispozitiv cunoscut sub numele de artroscop. Acesta permite chirurgului să vadă în interiorul corpului și să vadă zona specifică pe care se lucrează în timpul intervenției chirurgicale, fără a fi nevoie de incizii mari.</div>
+        </div>
+      </div>
+
+<!-- 
+    <h1 class="heading">Întrebări <span>frecvente</span></h1>
+    <div class="faq-grid">
+        <div>
+          <div class="faq-question">Când este momentul potrivit pentru a face o intervenție chirurgicală?</div>
+          <div class="faq-answer">Nu există un moment potrivit pentru o operație, dar va trebui să țineți cont de o mulțime de factori, inclusiv nivelul de durere, nivelul de stabilitate al stării dumneavoastră și modul în care acest lucru v-a afectat calitatea vieții.</div>
+        </div>
+        <div>
+          <div class="faq-question">Cât dureaza recuperarea după operație?</div>
+          <div class="faq-answer">Sunt mai multe variabile ce afectează timpul necesar unui pacient pentru a se recupera și a vedea beneficiile chirurgiei ortopedice. Pentru unii pacienți, recuperarea durează câteva săptămâni. Pentru alții, poate dura câteva luni. În funcție de starea dumneavoastră generală de sănătate, de afecțiunea pentru care ați fost tratat și de tipul de intervenție chirurgicală efectuată, este posibil să puteți merge acasă în aceeași zi sau a doua zi după operație, chiar dacă ați avut o intervenție chirurgicală de înlocuire totală a articulației.</div>
+        </div>
+        <div>
+          <div class="faq-question">Voi putea face aceleași lucruri ca și înainte de operație?</div>
+          <div class="faq-answer">Procedurile chirurgicale au ca scop restabilirea funcției și mișcarea fără durere, dar există adesea limitări după intervenția chirurgicală ortopedică. Discutați cu chirurgul dumneavoastră despre așteptările realiste pentru vindecare și recuperare.</div>
+        </div>
+        <div>
+          <div class="faq-question">Ce fel de durere voi avea după operație?</div>
+          <div class="faq-answer">În timp ce toată lumea se confruntă cu durerea în mod diferit, un anumit disconfort este frecvent după operație. Este normal să aveți o oarecare durere sau disconfort la locul intervenției chirurgicale, precum și o posibilă sensibilitate a oaselor/articulațiilor după operație. Chirurgul dumneavoastră ortoped va lucra îndeaproape cu echipa dumneavoastră clinică și cu alți îngrijitori pentru a determina cea mai bună strategie de gestionare a durerii pentru dumneavoastră.</div>
+        </div>
+        <div>
+          <div class="faq-question">Cat de mult rezista articulatia artificială?</div>
+          <div class="faq-answer">
+            Progresele în tehnologia medicală, inclusiv utilizarea materialelor durabile în articulațiile artificiale, prelungesc speranța de viață a dispozitivelor protetice. Proteza poate dura până la 15-20 de ani dacă mențineți un stil de viață sănătos, evitați creșterea în greutate și nu aveți artrită.</div>
+        </div>
+        <div>
+          <div class="faq-question">Ce reprezinta operația artroscopică?</div>
+          <div class="faq-answer">Chirurgia artroscopică este un tip de intervenție chirurgicală minim invazivă care necesită doar mici incizii datorită unui dispozitiv cunoscut sub numele de artroscop. Acesta permite chirurgului să vadă în interiorul corpului și să vadă zona specifică pe care se lucrează în timpul intervenției chirurgicale, fără a fi nevoie de incizii mari.</div>
+        </div>
+      </div> -->
 
 
 </section>
