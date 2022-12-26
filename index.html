@@ -18,8 +18,8 @@
 :root{
     --green:#77d5be;
     --black:rgb(36, 35, 35);
-    --light-color:rgb(202, 202, 201);
-    /* --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2); */
+    --light-color:#35595a;
+    /* --box-shadow:.5rem .5rem 0 rgba(8, 8, 8, 0.2); */
     /* --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2); */
     --border:.2rem solid var(--light-color);
 }
@@ -44,10 +44,11 @@ html{
 section{
     padding:2rem 9%;
     min-height: 100vh;
+    background-color: #d0fcfb;
 }
 
 section:nth-child(even){
-    background: #f5f5f5;
+    background: #d0fcfb;
 }
 
 .home .content h3 span {
@@ -63,15 +64,15 @@ section:nth-child(even){
     margin-top: 150px;
   }
 /* 
-  .faq-question {
+  /* .faq-question {
     font-weight: bold;
     color: var(--green);
   } */
 
-  .faq-answer {
+ /* .faq-answer {
     margin-top: 10px;
     font-size: 15px;
-  }
+  } */
 
 .heading{
     text-align: center;
@@ -170,7 +171,7 @@ section:nth-child(even){
     align-items: center;
     flex-wrap: wrap;
     gap:1.5rem;
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
 }
 
 .home .image{
@@ -179,6 +180,9 @@ section:nth-child(even){
 
 .home .image img{
     width: 100%;
+    margin-left:17rem;
+    opacity: 75%;
+    filter:hue-rotate(180);
 }
 
 .home .content{
@@ -315,6 +319,7 @@ section:nth-child(even){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:2rem;
+    margin-top: 100px;
 }
 
 .review .box-container .box{
@@ -327,6 +332,10 @@ section:nth-child(even){
     position: relative;
     overflow: hidden;
     z-index: 0;
+}
+
+.review .box-container .box:hover {
+    margin-top: 10px;
 }
 
 .review .box-container .box img{
@@ -375,7 +384,7 @@ section:nth-child(even){
 }
 
 .blogs .box-container .box{
-    border:var(--border);
+    /* border:var(--border); */
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     padding: 2rem;
@@ -498,20 +507,33 @@ section:nth-child(even){
   display: none;
   font-size: 20px;
   color: black;
-  
 }
 
-.faq-question {
-    font-size: 1.5rem;
+button.faq-question-button {
+    background-color: var(--green);
+    color: #f5f5f5;
+    padding: 12px 10px 12px 10px;
+    margin: 0px auto 5px auto;
+    border-radius: 5px;
     
 }
 
+button.faq-question-button:hover {
+    color: var(--green);
+    background:#fff;
+    margin-bottom: 0.2rem;
+}
 .faq-question, .faq-question-button{
     width: auto;
     padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 30px;
     background: none;
     color: var(--green);
+}
+
+span.fa-chevron-down {
+    color: white;
 }
 
 .faq-question-button:hover + .faq-answer,
@@ -600,6 +622,15 @@ html{
     margin-top: 150px;
 }
 
+.faq-answer {
+  /* display: none; */
+  font-size: 45%;
+  color: black;
+}
+
+.faq-question-button{
+    font-size: 15px;
+}
 }
 
     </style>
@@ -612,7 +643,7 @@ html{
     <a href="#" class="logo"> <ig src="./image/Opera_Snapshot_2022-11-22_181354_www.canva.com-removebg-preview.png" style="height:80px; width:80px" alt=""><span class="headerspan">Orto</span>pedix.</a>
 
     <nav class="navbar">
-        <a href="https://wa.me/0040728237356"> <img alt="Chat" src="./image/icons8-whatsapp-48.png" />
+        <a href="https://wa.me/0040728237356" class="whatsapp"> <img alt="Chat" src="./image/icons8-whatsapp-48.png" />
         <a href="./progr.html">Programare online</a>
         <a href="#services">Specializări</a>
         <a href="#blogs">Blog</a>
@@ -633,7 +664,7 @@ html{
         <p>Vei avea sprijinul nostru în tot procesul de refacere si ne vom asigura că vei beneficia de cele mai bune servicii medicale.</p>
     </div>
     <div class="image">
-        <img src="image/home-img.svg" alt="">
+        <img src="image/ortopedic.png" alt="">
     </div>
 
 </section>
@@ -938,7 +969,7 @@ html{
         </div>
         <div class="faq-question">
           <button class="faq-question-button">Voi putea face aceleași lucruri ca și înainte de operație? <span class="fas fa-chevron-down"></span></button>
-          <div class="faq-answer">Procedurile chirurgicale au ca scop restabilirea funcției și mișcarea fără durere, dar există adesea limitări după intervenția chirurgicală ortopedică. Discutați cu chirurgul dumneavoastră despre așteptările realiste pentru vindecare și recuperare./div>
+          <div class="faq-answer">Procedurile chirurgicale au ca scop restabilirea funcției și mișcarea fără durere, dar există adesea limitări după intervenția chirurgicală ortopedică. Discutați cu chirurgul dumneavoastră despre așteptările realiste pentru vindecare și recuperare.</div>
         </div>
         <div class="faq-question">
           <button class="faq-question-button">Ce fel de durere voi avea după operație? <span class="fas fa-chevron-down"></span></button>
