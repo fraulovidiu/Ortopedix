@@ -44,11 +44,11 @@ html{
 section{
     padding:2rem 9%;
     min-height: 100vh;
-    background-color: #d0fcfb;
+    /* background-color: #d0fcfb; */
 }
 
 section:nth-child(even){
-    background: #d0fcfb;
+    /* background: #d0fcfb; */
 }
 
 .home .content h3 span {
@@ -180,9 +180,9 @@ section:nth-child(even){
 
 .home .image img{
     width: 100%;
-    margin-left:17rem;
-    opacity: 75%;
-    filter:hue-rotate(180);
+    margin-left:15rem;
+    /* opacity: 75%; */
+    /* filter:hue-rotate(180); */
 }
 
 .home .content{
@@ -204,10 +204,10 @@ section:nth-child(even){
 }
 
 .services .box-container{
+    margin-top: 7vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:2rem;
-
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap:5rem;
 }
 
 .services .box-container .box{
@@ -236,23 +236,44 @@ section:nth-child(even){
     line-height: 2;
 }
 
+.about {
+    /* background-color: var(--green); */
+}
+
+.about span {
+    color: var(--green); 
+}
 .about .row{
+    /* background-color: var(--green); */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap:2rem;
+    margin-top: 10vh;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
 }
 
 .about .row .image{
-    flex:1 1 45rem;
+    flex:1 1 30rem;
+    width: 700px;
+    background-color: white;
+    
 }
 
 .about .row .image img{
-    width: 100%;
+    width: 70%;
+    margin: 40px 0px 40px 80px;
 }
 
 .about .row .content{
+    width: auto;
     flex:1 1 45rem;
+    margin-right: 10vh;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .about .row .content h3{
@@ -287,7 +308,7 @@ section:nth-child(even){
 .book .row form{
     flex:1 1 45rem;
     background: #fff;
-    border:var(--border);
+    /* border:var(--border); */
     box-shadow: var(--box-shadow);
     text-align: center;
     padding: 2rem;
@@ -301,11 +322,11 @@ section:nth-child(even){
 }
 
 .book .row form .box{
-    width: 100%;
+    width: 80%;
     margin:.7rem 0;
     border-radius: .5rem;
     border:var(--border);
-    font-size: 1.6rem;
+    font-size:  1.6rem;
     color: var(--black);
     text-transform: none;
     padding: 1rem;
@@ -313,6 +334,7 @@ section:nth-child(even){
 
 .book .row form .btn{
     padding:1rem 4rem;
+    font-size: 2rem;
 }
 
 .review .box-container{
@@ -323,7 +345,7 @@ section:nth-child(even){
 }
 
 .review .box-container .box{
-    border:var(--border);
+    /* border:var(--border); */
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     padding:2.5rem;
@@ -379,19 +401,20 @@ section:nth-child(even){
 
 .blogs .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap:2rem;
 }
 
 .blogs .box-container .box{
     /* border:var(--border); */
     box-shadow: var(--box-shadow);
+    margin-top: 10vh;
     border-radius: .5rem;
     padding: 2rem;
 }
 
 .blogs .box-container .box .image{
-    height: 20rem;
+    height: 30rem;
     overflow:hidden;
     border-radius: .5rem;
 }
@@ -510,10 +533,10 @@ section:nth-child(even){
 }
 
 button.faq-question-button {
-    background-color: var(--green);
-    color: #f5f5f5;
+    /* background-color: var(--green); */
+    color: #111111;
     padding: 12px 10px 12px 10px;
-    margin: 0px auto 5px auto;
+    margin: 0px auto 5px 30px;
     border-radius: 5px;
     
 }
@@ -525,20 +548,20 @@ button.faq-question-button:hover {
 }
 .faq-question, .faq-question-button{
     width: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-left:50px;
     font-size: 30px;
     background: none;
     color: var(--green);
 }
 
 span.fa-chevron-down {
-    color: white;
+    color: var(--green);
 }
 
 .faq-question-button:hover + .faq-answer,
 .faq-question-button:focus + .faq-answer {
   display: block;
+
 }
 /* responsive */
 
@@ -653,7 +676,7 @@ html{
     <a href="#" class="logo"> <ig src="./image/Opera_Snapshot_2022-11-22_181354_www.canva.com-removebg-preview.png" style="height:80px; width:80px" alt=""><span class="headerspan">Orto</span>pedix.</a>
 
     <nav class="navbar">
-        <a href="https://wa.me/0040728237356" class="whatsapp"> <img alt="Chat" src="./image/icons8-whatsapp-48.png" />
+        <a href="https://wa.me/0040728237356" class="whatsapp"> <img alt="Chat" src="./image/icons8-whatsapp-48.png" style="height: 50px;"/>
         <a href="./progr.html">Programare online</a>
         <a href="#services">Specializări</a>
         <a href="#blogs">Blog</a>
@@ -674,7 +697,7 @@ html{
         <p>Vei avea sprijinul nostru în tot procesul de refacere si ne vom asigura că vei beneficia de cele mai bune servicii medicale.</p>
     </div>
     <div class="image">
-        <img src="image/ortopedic.png" alt="">
+        <img src="image/about-img.svg" alt="">
     </div>
 
 </section>
@@ -689,68 +712,39 @@ html{
     <div class="box-container">
 
         <div class="box">
-            <i class="fas fa-notes-medical"></i>
-            <h3>Operații și plan de recuperare</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+        
+            <h3>Artroplastie totală de șold anterior</h3>
+            <p> Aceasta este o procedură chirurgicală care implică înlocuirea articulației șoldului cu o proteză artificială. Este uneori necesară atunci când articulația șoldului este deteriorată sau afectată de artrită.</p>
+            <a href="./hipsurgery.html" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+           
+            <h3>Artroplastie totală de genunchi</h3>
+            <p>Aceasta este o procedură chirurgicală care implică înlocuirea articulației genunchiului cu o proteză artificială. Este uneori necesară atunci când articulația genunchiului este deteriorată sau afectată de artrită sau de alte afecțiuni care afectează cartilajul.</p>
             <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
         </div>
 
         <div class="box">
-            <i class="fas fa-ambulance"></i>
-            <h3>Afecțiuni degenerative</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+          
+            <h3>Artroplastie parțială de genunchi</h3>
+            <p>Aceasta este o procedură chirurgicală care implică înlocuirea unei părți a articulației genunchiului cu o proteză artificială. Este uneori necesară atunci când doar o parte a articulației genunchiului este deteriorată sau afectată de artrită sau de alte afecțiuni care afectează cartilajul.</p>
             <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
         </div>
 
         <div class="box">
-            <i class="fas fa-user-md"></i>
-            <h3>Tratament conservator</h3>
+
+            <h3>Consultații de specialitate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
+        </div>
+        <div class="box">
+            
+            <h3>Consultații de specialitate</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
             <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
         </div>
 
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>Consultații de specialitate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-        </div>
      </div>
 
  </section>
@@ -766,13 +760,13 @@ html{
     <div class="row">
 
         <div class="image">
-            <img src="image/about-img.svg" alt="">
+            <img src="image/ortopedic.png" alt="">
         </div>
 
         <div class="content">
             <h3>Ortopedie și traumatologie</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
+            <p>Ortopedia este ramura medicinei care se ocupă cu tratarea afecțiunilor sistemului musculo-scheletal, care include oasele, articulațiile, mușchii și tendoanele. Ortopedia se concentrează atât pe tratarea afecțiunilor acute, cum ar fi fracturile, cât și pe gestionarea afecțiunilor cronice, cum ar fi artrita sau osteoporoza.</p>
+            <p>Traumatologia este o ramură a ortopediei care se ocupă cu tratarea leziunilor grave ale sistemului musculo-scheletal, cum ar fi fracturile și luxațiile. Traumatologii sunt adesea implicați în tratarea accidentelor de mașină, a leziunilor sportive sau a altor tipuri de traume grave.</p>
             <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
         </div>
 
@@ -800,7 +794,7 @@ html{
             <input type="number" placeholder="Numărul tău de telefon" class="box">
             <input type="email" placeholder="Adresa ta de email" class="box">
             <!-- <input type="file" placeholder="Incarca o imagine" class="file-upload-input" onchange="readURL(this)" accept="Image/*"> -->
-            <input type="date" class="box">
+            <!-- <input type="date" class="box"> -->
             <input type="submit" value="Confirmă" class="btn">
         </form>
 
@@ -876,13 +870,10 @@ html{
                 <img src="image/blog-1.jpg" alt="">
             </div>
             <div class="content">
-                <!-- <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div> -->
-                <h3>Top 10 remedii pentru ...</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
+                
+                <h3>Top 10 remedii pentru durerile de șold
+                </h3>
+               <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
             </div>
         </div>
 
@@ -891,13 +882,9 @@ html{
                 <img src="image/blog-2.jpg" alt="">
             </div>
             <div class="content">
-                <!-- <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div> -->
-                <h3>Cum poți scăpa de ...</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
+               
+                <h3>Cum poți scăpa de durerea constantă de genunchi</h3>
+             <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
             </div>
         </div>
 
@@ -906,58 +893,11 @@ html{
                 <img src="image/blog-3.jpg" alt="">
             </div>
             <div class="content">
-                <!-- <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div> -->
-                <h3>Cum te poti proteja de ....</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
+               
+                <h3>Cum te poti proteja de bolile auto-imune</h3>
+             <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
             </div>
         </div>
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <!-- <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div> -->
-                <h3>Cum te poti proteja de ....</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <!-- <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div> -->
-                <h3>Cum te poti proteja de ....</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <!-- <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div> -->
-                <h3>Cum te poti proteja de ....</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> Află mai multe <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
     </div>
 
 </section>
