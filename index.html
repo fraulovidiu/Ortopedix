@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BRK Ortopedix | Ortopedie și traumatologie București">
     <title>BRK Ortopedix | Sănătate pentru oase | Cabinet Ortopedie | Ortopedie și traumatologie | București</title>
     <!-- Font Awesome icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -249,7 +250,7 @@ section:nth-child(even){
     align-items: center;
     flex-wrap: wrap;
     gap:2rem;
-    margin-top: 10vh;
+    margin-top: 4vh;
     border-radius: 5px;
     padding: 0px 10px 0px 10px;
 }
@@ -262,14 +263,13 @@ section:nth-child(even){
 }
 
 .about .row .image img{
-    width: 70%;
-    margin: 40px 0px 40px 80px;
+    /* width: 70%; */
+    /* margin: 0px 0px 40px 80px; */
 }
 
 .about .row .content{
     width: auto;
     flex:1 1 45rem;
-    margin-right: 10vh;
     padding-left: 15px;
     padding-bottom: 10px;
     border-radius: 5px;
@@ -337,11 +337,14 @@ section:nth-child(even){
     font-size: 2rem;
 }
 
+.review {
+    display: none;
+}
 .review .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     gap:2rem;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .review .box-container .box{
@@ -369,13 +372,13 @@ section:nth-child(even){
 }
 
 .review .box-container .box h3{
-    color:#fff;
+    color:rgb(8, 8, 8);
     font-size: 2.2rem;
     padding:.5rem 0;
 }
 
 .review .box-container .box .stars i{
-    color:#fff;
+    color:rgb(255, 255, 255);
     font-size: 1.5rem;
 }
 
@@ -392,7 +395,7 @@ section:nth-child(even){
     top:-4rem; left: 50%;
     transform:translateX(-50%);
     background:var(--green);
-    border-bottom-left-radius: 50%;
+    /* border-bottom-left-radius: 50%; */
     border-bottom-right-radius: 50%;
     height: 25rem;
     width: 120%;
@@ -523,22 +526,23 @@ section:nth-child(even){
 
 .faq-section {
     font-size: 20px;
-    margin-top: 90px;
+    margin-top: 120px;
 }
 
 .faq-answer {
   display: none;
   font-size: 20px;
   color: black;
+  padding: 10px 150px 12px 100px;
 }
 
 button.faq-question-button {
     /* background-color: var(--green); */
     color: #111111;
-    padding: 12px 10px 12px 10px;
-    margin: 0px auto 5px 30px;
+    padding: 20px 50px 12px 50px;
+    margin: 0px 0px 5px 30px;
     border-radius: 5px;
-    
+    font-size: 2.75rem;
 }
 
 button.faq-question-button:hover {
@@ -562,6 +566,13 @@ span.fa-chevron-down {
 .faq-question-button:focus + .faq-answer {
   display: block;
 
+}
+
+.whatsapp {
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    padding: 0px 50px 30px;
 }
 /* responsive */
 
@@ -634,6 +645,23 @@ section{
 
 html{
     font-size: 50%;
+    /* text-align: center; */
+}
+
+.services .box-container{
+    gap: 2rem;
+    padding-left: 0.5vh;
+}
+
+.services .btn {
+    margin-left: 10vh;
+}
+
+.services h3 {
+    text-align: center;
+}
+
+.services .btn {
     text-align: center;
 }
 
@@ -664,8 +692,28 @@ html{
 .faq-question-button{
     font-size: 15px;
 }
+
+.about .image {
+    display: none;
+}
+.about .content a{
+    margin-left: 10vh;
 }
 
+.about {
+    width: 100%;
+    margin-top: 5vh;
+}
+ .about h1{
+    font-size: 3.5vh;
+ }
+
+.whatsapp {
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    padding: 0px 50px 30px;
+}
     </style>
 </head>
 
@@ -676,7 +724,6 @@ html{
     <a href="#" class="logo"> <ig src="./image/Opera_Snapshot_2022-11-22_181354_www.canva.com-removebg-preview.png" style="height:80px; width:80px" alt=""><span class="headerspan">Orto</span>pedix.</a>
 
     <nav class="navbar">
-        <a href="https://wa.me/0040728237356" class="whatsapp"> <img alt="Chat" src="./image/icons8-whatsapp-48.png" style="height: 50px;"/>
         <a href="./progr.html">Programare online</a>
         <a href="#services">Specializări</a>
         <a href="#blogs">Blog</a>
@@ -689,6 +736,9 @@ html{
 
 <!-- navbar section end -->
 <!-- hOME PAGE -->
+<div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=40729077770&text=Bun%C4%83%20ziua%2C%20a%C8%99%20dori%20s%C4%83%20fac%20o%20programare%21" id="fixed-link" style=""><img src="./image/icons8-whatsapp-48.png" alt=""></a>
+</div>
 
 <section class="home" id="home">
 
@@ -760,7 +810,7 @@ html{
     <div class="row">
 
         <div class="image">
-            <img src="image/ortopedic.png" alt="">
+            <img src="image/running.svg" alt="">
         </div>
 
         <div class="content">
@@ -793,8 +843,6 @@ html{
             <input type="text" placeholder="Numele și prenumele" class="box">
             <input type="number" placeholder="Numărul tău de telefon" class="box">
             <input type="email" placeholder="Adresa ta de email" class="box">
-            <!-- <input type="file" placeholder="Incarca o imagine" class="file-upload-input" onchange="readURL(this)" accept="Image/*"> -->
-            <!-- <input type="date" class="box"> -->
             <input type="submit" value="Confirmă" class="btn">
         </form>
 
